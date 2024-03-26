@@ -2,6 +2,8 @@ import type { AppProps } from "next/app";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -15,7 +17,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       activeChain={activeChain}
     >
       <ChakraProvider>
+        <Navbar/>
         <Component {...pageProps} />
+        <Footer/>
       </ChakraProvider>
     </ThirdwebProvider>
   );

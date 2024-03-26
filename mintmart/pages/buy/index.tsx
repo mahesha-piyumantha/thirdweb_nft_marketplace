@@ -1,9 +1,9 @@
+import { Container , Flex , Heading , Button } from "@chakra-ui/react";
 import { NextPage } from "next";
-import { Container, Flex, Heading, Stack, Button } from "@chakra-ui/react";
-import NextLink from "next/link";
 import Head from "next/head";
+import NextLink from "next/link";
 
-const Home: NextPage = () => {
+const Buy: NextPage = () => {
   return (
     <>
       <Head>
@@ -24,30 +24,18 @@ const Home: NextPage = () => {
           alignItems={"center"}
           justifyContent={"start"}
           direction={"column"}
-          pt={'200px'}
-          gap={ "100px"}
+          pt={"200px"}
+          gap={"100px"}
         >
           <Heading fontFamily={"cursive"} textColor={"white"} fontSize={"65px"}>
-            Collect your rare NFT digital art
+           Buy
           </Heading>
-          <Button
-            as={NextLink}
-            href="/buy"
-            fontFamily={"cursive"}
-            fontWeight={"light"}
-            fontSize={'20px'}
-            backgroundColor={"purple"}
-            textColor={"white"}
-            height={"60px"}
-            width={"200px"}
-            _hover={{textColor : "purple" , backgroundColor : "white"}}
-          >
-            Shop NFTs
-          </Button>
+          
         </Flex>
       </Container>
     </>
   );
+  
 };
 
-export default Home;
+export default Buy;

@@ -1,4 +1,4 @@
-import { Container , Flex , Heading , Button } from "@chakra-ui/react";
+import { Container, Flex, Heading, Button } from "@chakra-ui/react";
 import { NextPage } from "next";
 import Head from "next/head";
 import NextLink from "next/link";
@@ -28,14 +28,12 @@ const Buy: NextPage = () => {
           gap={"100px"}
         >
           <Heading fontFamily={"cursive"} textColor={"white"} fontSize={"65px"}>
-           Buy
+            Buy
           </Heading>
-          
         </Flex>
       </Container>
     </>
   );
-  
 };
 
 export default Buy;
